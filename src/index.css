@@ -1,0 +1,89 @@
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.clock-face {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle, #fff 60%, #f3f3f3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 100%;
+  transform: translateX(-50%);
+  transition: all 0.05s ease-in-out;
+}
+
+.hour-hand {
+  width: 25%;
+  height: 4px;
+  background-color: #333;
+}
+
+.minute-hand {
+  width: 40%;
+  height: 3px;
+  background-color: #666;
+}
+
+.second-hand {
+  width: 45%;
+  height: 2px;
+  background-color: red;
+}
+
+.clock-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+.languageWrapper {
+  display: flex;
+  justify-content: center;
+}
